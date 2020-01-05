@@ -1,0 +1,220 @@
+/*BASE*/
+
+
+html
+{height: 100%;max-width: 100%;
+}
+
+body{
+	margin: auto;
+	opacity: 85%;
+}
+main
+	 {	background-image: url(http://st.gde-fon.com/wallpapers_original/558367_soccer_fcbarcelona_barca_barcelona_logo_football_f_1920x1080_www.Gde-Fon.com.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+padding:200px;}
+
+section
+{display: flex;
+	justify-content: center;
+	}
+
+/* HEADER */
+
+header {
+  background-image:linear-gradient(rgba(7, 73, 255, 0.808),rgb(255, 255, 255),red);
+justify-content: center;
+font-family: cursive;
+padding: 10px;
+}
+.deco
+{background-image:linear-gradient(rgb(243, 238, 174),rgb(9, 255, 214));
+	display:block;
+	color:#555555;
+	font-weight:bold;
+	height:30px;
+	line-height:29px;
+	margin-bottom:14px;
+	text-decoration:none;
+	width:191px;}
+
+
+
+ul{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+list-style-type: none;
+}
+
+ul:hover {
+	background-color: cornsilk;
+	color: crimson;
+
+
+}
+
+/*index*/
+.index
+{
+	text-align: center;
+    font-size: 5em;
+    color:RGB(237,187,0);
+    letter-spacing: -3px;
+    font-weight: 550;
+    text-transform: uppercase;
+    animation: titre .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #004D98;, 0px 0px 7px #004D98;;
+  }
+  
+  @keyframes titre {
+    from {
+      text-shadow:0px 0px 10px #004D98,
+        0px 0px 10px #004D98, 
+        0px 0px 25px #004D98,
+        0px 0px 25px #004D98,
+        0px 0px 25px #004D98,
+        0px 0px 25px #004D98,
+        0px 0px 25px #004D98,
+        0px 0px 25px #004D98,
+        0px 0px 50px #004D98,
+        0px 0px 50px #004D98,
+        0px 0px 50px #A50044,
+        0px 0px 150px #A50044,
+        0px 10px 100px #A50044,
+        0px 10px 100px #A50044,
+        0px 10px 100px #A50044,
+        0px 10px 100px #A50044,
+        0px -10px 100px #A50044,
+        0px -10px 100px #A50044;
+    }
+  }
+}
+
+/*livreor*/
+section
+{display: flex;}
+
+h1{text-align: center;
+color: white;}
+
+h1:hover
+{
+	
+	color: #004D98;
+}
+.livreor
+{background-color:#004D98;
+	background-size: cover;
+background-repeat: no-repeat;
+opacity: 90%;
+	display: block;
+	 border-style: solid;
+   text-align: center;
+	table-layout: fixed;
+	width:90%;
+	display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+	border-color: grey;
+	color: white;
+}
+
+th{opacity:100% ;
+	color:#A50044; 
+	text-transform: uppercase;
+}
+
+td
+{
+color:#EDBB00;
+}
+
+	th, td {
+		border:auto solid black;
+		
+		}
+
+td:hover
+{
+background-color: white;
+box-shadow: 0px 0px 150px #000000;
+z-index: 2;
+-webkit-transition: all 200ms ease-in;
+-webkit-transform: scale(1.5);
+}
+
+.tex{
+
+	width: 150px;
+}
+.date{
+	font-size: 18px;
+	text-decoration: underline;
+}
+.nom
+{text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 18px;
+	
+}
+/*connexion inscription */
+
+
+
+.formu {
+
+
+	border: solid rgb(197, 23, 255);
+    border-radius: 30px 0 30px 0;
+    background-image:linear-gradient(rgba(7, 73, 255, 0.808),red);
+	padding:100px;
+		
+}
+
+.titre{
+	font-family: cursive;
+	color:#EDBB00;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-style: italic;
+	animation: defile 5s infinite linear;
+	text-align: right;
+  
+}
+ @keyframes defile{
+    0%  {
+        margin-right:90%;
+	}
+	
+    100%  {
+        margin-left:90%;
+    }
+}
+	 
+
+
+/*PROFIL*/
+
+
+
+
+.profil2{
+width: 80%;
+	padding: 15px;
+	margin: 20px;
+	background-color: #d5d8ff;
+
+	color: rgb(0, 0, 0);
+
+}
+
+label{
+	color: #EDBB00;
+	font-size: 20px;
+}
+
+
+
+
