@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 05 jan. 2020 à 04:28
+-- Généré le :  mer. 08 jan. 2020 à 17:35
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
   `id_utilisateur` int(11) NOT NULL,
   `date` date NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `commentaires`
@@ -57,7 +57,10 @@ INSERT INTO `commentaires` (`ID`, `commentaire`, `id_utilisateur`, `date`) VALUE
 (29, 'rdv a levek', 29, '2020-01-02'),
 (28, 'valverde demission\r\n', 29, '2020-01-02'),
 (37, '#valverdeout', 32, '2020-01-05'),
-(36, 'nnnnnnnnn', 30, '2020-01-04');
+(36, 'nnnnnnnnn', 30, '2020-01-04'),
+(38, 'bonne nuit a tout le monde sauf a se chien en laisse  de valverde #valverdeout', 33, '2020-01-06'),
+(39, 'nul.', 34, '2020-01-06'),
+(40, 'Dans l\'axe', 35, '2020-01-06');
 
 -- --------------------------------------------------------
 
@@ -71,18 +74,21 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `login` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
 INSERT INTO `utilisateurs` (`id`, `login`, `password`) VALUES
-(28, 'toto', 'momo'),
+(28, 'h', 'hhhh'),
 (29, 'leo', 'messi'),
 (30, 'tomtom', 'bobo'),
 (31, 'XADV13', 'XADV'),
-(32, 'ib', 'azerty');
+(32, 'ib', 'azerty'),
+(33, 'byrus', 'sama'),
+(34, 'ninou.ines', 'ninouninou'),
+(35, 'test', 'test');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
