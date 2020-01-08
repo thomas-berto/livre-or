@@ -20,23 +20,7 @@
  </nav>
 </header>
 <main>
-		<section>
-	
-		
-	<form class="formu" method="post">
-		<div class="titre"><legend>modification info personnel</legend>
-</div>
-			<fieldset>	<label>MODIFIER LOGIN :</label>
-			      <input type="text" name="login" maxlength="10"  class="profil2"/></fieldset>
-			<fieldset><label>MODIFIER MOT DE PASSE :</label>
-			<input type="password" name="passe" minlength="4" class="profil2"/></fieldset>
-					<input type="submit" value="MODIFIER" name="modifier"/>
-					
-
-
-				</form>
-			
-			<?php
+	<?php
 			$connexion = mysqli_connect("localhost", "root", "", "livreor");
 $sql = "SELECT * FROM utilisateurs WHERE id='".$_SESSION['id']."'";
 $req = mysqli_query($connexion, $sql);
@@ -64,7 +48,7 @@ if(isset($_POST['modifier']))
 				$_SESSION['login'] = $_POST['login'];
 				$modif_login = true;
 			}{
-				echo "<div class='coco'>Login modifier avec succès</div>";}
+				echo "<div class='coco'><p> Login modifier avec succès</p></div>";}
 		
 		}
 		
@@ -76,13 +60,29 @@ if(isset($_POST['modifier']))
 			$_SESSION['password'] = $_POST['passe'];
 			$modif_passe = true;
 		}	{
-			echo "<table class='coco'>Mot de passe modifier avec succès</table>";}
+			echo "<div class='coco'><p>Mot de passe modifier avec succès</p></div>";}
 	}
 
 	mysqli_close($connexion);
 
 }
-?>
+?>		<section>
+	
+		
+	<form class="formu" method="post">
+		<div class="titre"><legend>Modification </legend>
+</div>
+			<fieldset>	<label>MODIFIER LOGIN :</label>
+			      <input type="text" name="login" maxlength="10"  class="profil2"/></fieldset>
+			<fieldset><label>MODIFIER MOT DE PASSE :</label>
+			<input type="password" name="passe" minlength="4" class="profil2"/></fieldset>
+					<input type="submit" value="MODIFIER" name="modifier"/>
+					
+
+
+				</form>
+			
+		
 </section>
 </main>
 			</body>	

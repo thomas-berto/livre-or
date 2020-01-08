@@ -65,7 +65,7 @@ ul:hover {
     font-weight: 550;
     text-transform: uppercase;
     animation: titre .75s ease-out infinite;
-    text-shadow: 0px 0px 5px #004D98;, 0px 0px 7px #004D98;;
+    text-shadow: 0px 0px 5px #004D98;
   }
   
   @keyframes titre {
@@ -216,5 +216,20 @@ label{
 }
 
 
-
+.coco{
+	text-align: center;
+	animation: titre .75s ease-out infinite;
+	text-shadow: 0px 0px 5px #004D98;
+	 }
+	 
+	 @keyframes titre {
+	   from {
+		 text-shadow:0px 0px 10px #004D98,
+		   0px 0px 10px #004D98, 
+		   0px 0px 25px #004D98,
+		   0px -10px 100px #A50044,
+		   0px -10px 100px #A50044;
+	   }
+	 }
+   }
 

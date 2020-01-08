@@ -22,7 +22,8 @@
 <table class="livreor" >
 <?php
 	$connexion = mysqli_connect("localhost", "root", "", "livreor");
-	$requete = "SELECT login,commentaire,date FROM `commentaires` INNER JOIN utilisateurs ON commentaires.id_utilisateur = utilisateurs.id ORDER by date DESC"; 
+	$requete = "SELECT login,commentaire,date FROM `commentaires`
+	 INNER JOIN utilisateurs ON commentaires.id_utilisateur = utilisateurs.id ORDER by date DESC"; 
 	$query=mysqli_query($connexion, $requete);
 	$resultat=mysqli_fetch_all($query);
 
