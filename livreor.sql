@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 08 jan. 2020 à 17:35
+-- Généré le :  jeu. 09 jan. 2020 à 02:45
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -33,34 +33,31 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `commentaire` text NOT NULL,
   `id_utilisateur` int(11) NOT NULL,
-  `date` date NOT NULL,
+  `date` datetime NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `commentaires`
 --
 
 INSERT INTO `commentaires` (`ID`, `commentaire`, `id_utilisateur`, `date`) VALUES
-(12, 'ffff', 28, '2019-12-19'),
-(13, 'gcg', 28, '2019-12-21'),
-(14, 'ttt', 28, '2019-12-21'),
-(15, 'f', 28, '2019-12-21'),
-(16, 'coco', 28, '2019-12-21'),
-(17, 'quel but de Messi', 28, '2019-12-21'),
-(18, 'une frappe exceptionnel', 28, '2019-12-21'),
-(30, 'rdv au taasy\r\n', 28, '2020-01-02'),
-(31, 'teaaam jul', 28, '2020-01-02'),
-(33, 'de ligoness\r\n', 28, '2020-01-03'),
-(34, 'gjj', 28, '2020-01-04'),
-(35, 'ffffffffggggggggg', 1, '2020-01-04'),
-(29, 'rdv a levek', 29, '2020-01-02'),
-(28, 'valverde demission\r\n', 29, '2020-01-02'),
-(37, '#valverdeout', 32, '2020-01-05'),
-(36, 'nnnnnnnnn', 30, '2020-01-04'),
-(38, 'bonne nuit a tout le monde sauf a se chien en laisse  de valverde #valverdeout', 33, '2020-01-06'),
-(39, 'nul.', 34, '2020-01-06'),
-(40, 'Dans l\'axe', 35, '2020-01-06');
+(12, 'ffff', 28, '2019-12-19 00:00:00'),
+(13, 'gcg', 28, '2019-12-21 00:00:00'),
+(14, 'ttt', 28, '2019-12-21 00:00:00'),
+(16, 'coco', 28, '2019-12-21 00:00:00'),
+(17, 'quel but de Messi', 28, '2019-12-21 00:00:00'),
+(18, 'une frappe exceptionnel', 28, '2019-12-21 00:00:00'),
+(30, 'rdv au taasy\r\n', 28, '2020-01-02 00:00:00'),
+(31, 'teaaam jul', 28, '2020-01-02 00:00:00'),
+(33, 'de ligoness\r\n', 28, '2020-01-03 00:00:00'),
+(34, 'gjj', 28, '2020-01-04 00:00:00'),
+(28, 'valverde demission\r\n', 29, '2020-01-02 00:00:00'),
+(37, '#valverdeout', 32, '2020-01-05 00:00:00'),
+(36, 'nnnnnnnnn', 30, '2020-01-04 00:00:00'),
+(39, 'nul.', 34, '2020-01-06 00:00:00'),
+(40, 'Dans l\'axe', 35, '2020-01-06 00:00:00'),
+(41, 'visca barca\r\n', 35, '2020-01-09 03:43:42');
 
 -- --------------------------------------------------------
 
@@ -88,7 +85,7 @@ INSERT INTO `utilisateurs` (`id`, `login`, `password`) VALUES
 (32, 'ib', 'azerty'),
 (33, 'byrus', 'sama'),
 (34, 'ninou.ines', 'ninouninou'),
-(35, 'test', 'test');
+(35, 'testo', 'testo');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
