@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  jeu. 09 jan. 2020 à 02:45
--- Version du serveur :  5.7.26
--- Version de PHP :  7.2.18
+-- Généré le :  jeu. 04 juin 2020 à 13:53
+-- Version du serveur :  10.4.10-MariaDB
+-- Version de PHP :  7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -35,29 +35,19 @@ CREATE TABLE IF NOT EXISTS `commentaires` (
   `id_utilisateur` int(11) NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `commentaires`
 --
 
 INSERT INTO `commentaires` (`ID`, `commentaire`, `id_utilisateur`, `date`) VALUES
-(12, 'ffff', 28, '2019-12-19 00:00:00'),
-(13, 'gcg', 28, '2019-12-21 00:00:00'),
-(14, 'ttt', 28, '2019-12-21 00:00:00'),
-(16, 'coco', 28, '2019-12-21 00:00:00'),
 (17, 'quel but de Messi', 28, '2019-12-21 00:00:00'),
-(18, 'une frappe exceptionnel', 28, '2019-12-21 00:00:00'),
-(30, 'rdv au taasy\r\n', 28, '2020-01-02 00:00:00'),
-(31, 'teaaam jul', 28, '2020-01-02 00:00:00'),
-(33, 'de ligoness\r\n', 28, '2020-01-03 00:00:00'),
-(34, 'gjj', 28, '2020-01-04 00:00:00'),
 (28, 'valverde demission\r\n', 29, '2020-01-02 00:00:00'),
 (37, '#valverdeout', 32, '2020-01-05 00:00:00'),
-(36, 'nnnnnnnnn', 30, '2020-01-04 00:00:00'),
-(39, 'nul.', 34, '2020-01-06 00:00:00'),
-(40, 'Dans l\'axe', 35, '2020-01-06 00:00:00'),
-(41, 'visca barca\r\n', 35, '2020-01-09 03:43:42');
+(43, 'messi blesser', 39, '2020-06-04 15:01:42'),
+(41, 'visca barca\r\n', 35, '2020-01-09 03:43:42'),
+(42, 'retour de la liga se 11 mai', 39, '2020-06-04 14:59:44');
 
 -- --------------------------------------------------------
 
@@ -71,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `login` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `utilisateurs`
@@ -85,7 +75,8 @@ INSERT INTO `utilisateurs` (`id`, `login`, `password`) VALUES
 (32, 'ib', 'azerty'),
 (33, 'byrus', 'sama'),
 (34, 'ninou.ines', 'ninouninou'),
-(35, 'testo', 'testo');
+(35, 'testo', 'testo'),
+(39, 'toto', '0b9c2625dc21ef05f6ad4ddf47c5f203837aa32c');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
