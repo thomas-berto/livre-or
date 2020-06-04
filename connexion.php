@@ -7,18 +7,19 @@
 
 <body>
 
-  <header class="topnav">
- <nav>
-<ul>
-<?php include('header.php') ?>
-</ul>
- </nav>
-</header>
-<main>
+    <header class="topnav">
+        <nav>
+            <ul>
+		        <?php include('header.php') ?>
+            </ul>
+        </nav>
+    </header>
+
+            <main>
 		
-				<section> 
+			<section> 
 				<form class="formu" method="post">
-						<div class="titre">
+					<div class="titre">
 						<legend>Connexion</legend>
 					</div>
 			
@@ -30,9 +31,7 @@
 						
 					
 				</form>
-</section>
-</main>
-</body></html>
+
 
 	<?php
 
@@ -41,6 +40,7 @@ if(isset($_POST["Connexion"]))
 
 	$login=$_POST["login"];
 	$password=$_POST["pass"];
+	$password = sha1($password);
 	$connexion=mysqli_connect("localhost","root","","livreor");
 	$requete = "SELECT * FROM utilisateurs WHERE login='$login'";
 	$query=mysqli_query($connexion,$requete);
@@ -58,9 +58,20 @@ if(isset($_POST["Connexion"]))
     mysqli_close($connexion);
     header('Location: livre-or.php');
     
+	}
+	else
+	{
+		echo '<p class="bug">*Login ou Mot de passe incorrect</p>';
     }
 
   }
 }
 
 ?>
+</section>
+</main>
+<footer>
+		Tout droit réserver . 2020 
+
+		</footer>
+</body></html>

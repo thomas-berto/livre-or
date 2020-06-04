@@ -32,6 +32,8 @@ if(isset($_POST['modifier']))
 	{
 		$login = $_POST['login'];
 		$passe = $_POST['passe'];
+		$passe= sha1($passe);
+
 		$modif_login = false;
 		$modif_passe = false;
 	
@@ -47,10 +49,11 @@ if(isset($_POST['modifier']))
 				mysqli_query($connexion, $sql);
 				$_SESSION['login'] = $_POST['login'];
 				$modif_login = true;
-			}{
+			}
+			{
 				echo "<div class='coco'><p> Login modifier avec succès</p></div>";}
 		
-		}
+		    }
 		
 		if($passe != $req2['password'])
 		{
@@ -85,6 +88,10 @@ if(isset($_POST['modifier']))
 		
 </section>
 </main>
+<footer>
+		Tout droit réserver . 2020 
+
+		</footer>
 			</body>	
 </html>
 

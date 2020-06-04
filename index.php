@@ -26,5 +26,9 @@
 </section>
 </main>
 
+<footer>
+		Tout droit réserver . 2020 
+
+		</footer>
 </body>
 </html>
